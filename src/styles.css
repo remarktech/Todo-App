@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    background-color: royalblue;
+body{    
+  background-image: url("background_image.jpg");
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
 }
