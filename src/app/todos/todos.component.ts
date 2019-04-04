@@ -19,7 +19,7 @@ export class TodosComponent implements OnInit {
   {
     //validation for empty todo
     if(!this.text){
-    alert("fill the form");
+    alert("Please fill the Todo");
     }
     else{
     var newTodo={
