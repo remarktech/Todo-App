@@ -17,11 +17,17 @@ export class TodosComponent implements OnInit {
   }
   addTodos()
   {
+    //validation for empty todo
+    if(!this.text){
+    alert("fill the form");
+    }
+    else{
     var newTodo={
       text: this.text
     }
     this.todos.push(newTodo);
     this._todoService.addTodo(newTodo);
+    }
   }
   deleteTodos(todotext)
   {
