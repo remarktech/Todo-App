@@ -2,7 +2,7 @@
 <div align="center">
 <div *ngIf="appState == 'default'">
   <br>
-  <h1 style="color:darkorange">Todo List</h1>
+  <h1 style="color:greenyellow">Todo List</h1>
   <br>
   <div class="form-group">
   <form (submit)="addTodos()" id="forma">
@@ -15,10 +15,10 @@
 <!-- for editing todo --> 
 <div *ngIf="appState == 'edit'">
   <br>
-    <h3>Edit List</h3>
+    <h1 style="color:darkorange">Edit List</h1>
     <br>
     <div class="form-group">
-    <form (submit)="updateTodo()">
+    <form (submit)="updateTodo()" id="edit">
       <input class="form-control" [(ngModel)]="text" type="text" placeholder="Add todo" [ngModelOptions]="{standalone: true}"> 
     </form>
   </div>
