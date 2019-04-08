@@ -27,6 +27,7 @@ export class TodosComponent implements OnInit {
     }
     this.todos.push(newTodo);
     this._todoService.addTodo(newTodo);
+    this.text = '';
     }
   }
   deleteTodos(todotext)
@@ -54,5 +55,6 @@ export class TodosComponent implements OnInit {
       }
     }
     this._todoService.updateTodo(this.oldText,this.text);
+    this.text='';
   }
 }
